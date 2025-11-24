@@ -5,46 +5,46 @@ Le projet utilise Ollama Embeddings pour transformer les descriptions de livres 
 
 🚀 Fonctionnalités
 
-Extraction des embeddings via Ollama (modèles locaux, gratuits, rapides).
+- Extraction des embeddings via Ollama (modèles locaux, gratuits, rapides).
 
-Indexation vectorielle avec ChromaDB.
+- Indexation vectorielle avec ChromaDB.
 
-Recommandation basée sur la similarité cosinus.
+- Recommandation basée sur la similarité cosinus.
 
-Tableau de bord interactif créé avec Gradio.
+- Tableau de bord interactif créé avec Gradio.
 
-Chargement de datasets personnalisés (CSV, textes…).
+- Chargement de datasets personnalisés (CSV, textes…).
 
-Pipeline simple et reproductible.
+= Pipeline simple et reproductible.
 
 🧠 Comment ça fonctionne
 
-Chargement du dataset de livres.
+1. Chargement du dataset de livres.
 
-Nettoyage et segmentation du texte.
+2. Nettoyage et segmentation du texte.
 
-Génération d’embeddings avec Ollama (nomic-embed-text ou autre modèle).
+3. Génération d’embeddings avec Ollama (nomic-embed-text ou autre modèle).
 
-Stockage des vecteurs dans ChromaDB.
+4. Stockage des vecteurs dans ChromaDB.
 
-Lors d’une requête utilisateur, le système trouve les livres les plus similaires sémantiquement.
+5. Lors d’une requête utilisateur, le système trouve les livres les plus similaires sémantiquement.
 
 🛠️ Technologies utilisées
 
-Python
+- Python
 
-Ollama (embeddings)
+- Ollama (embeddings)
 
-LangChain
+- LangChain
 
-ChromaDB
+- ChromaDB
 
-Gradio (interface utilisateur)
+- Gradio (interface utilisateur)
 
-Pandas / NumPy
+- Pandas / NumPy
 
 📦 Installation
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 
 Assure-toi d’avoir Ollama installé :
@@ -53,21 +53,23 @@ Assure-toi d’avoir Ollama installé :
 
 Puis télécharge un modèle d’embedding :
 
-ollama pull nomic-embed-text
+`ollama pull nomic-embed-text`
 
 ▶️ Lancer l'application
-python gradio-dashboard.py
+`python gradio-dashboard.py`
 
 
 Une interface web s’ouvrira automatiquement dans ton navigateur.
 
 📁 Structure du projet
+```python
 📦 book-recommender
  ┣ 📄 gradio-dashboard.py
  ┣ 📄 books_with_emotions.csv
  ┣ 📄 tagged_description.txt
  ┣ 📄 requirements.txt
  ┗ 📄 README.md
+```
 
 🤝 Contributions
 
