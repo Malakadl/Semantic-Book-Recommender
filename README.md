@@ -15,7 +15,7 @@ Le projet utilise Ollama Embeddings pour transformer les descriptions de livres 
 
 - Chargement de datasets personnalisés (CSV, textes…).
 
-= Pipeline simple et reproductible.
+- Pipeline simple et reproductible.
 
 🧠 Comment ça fonctionne
 
@@ -44,6 +44,7 @@ Le projet utilise Ollama Embeddings pour transformer les descriptions de livres 
 - Pandas / NumPy
 
 📦 Installation
+
 `pip install -r requirements.txt`
 
 
@@ -56,6 +57,7 @@ Puis télécharge un modèle d’embedding :
 `ollama pull nomic-embed-text`
 
 ▶️ Lancer l'application
+
 `python gradio-dashboard.py`
 
 
